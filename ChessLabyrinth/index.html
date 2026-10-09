@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="referrer" content="no-referrer">
-  <meta name="description" content="Datenschutzerklärung für die Android- und iOS-App Chess Labyrinth: lokale Spielstände, Google AdMob, Datenschutzentscheidungen und Ihre Rechte.">
-  <title>Datenschutzerklärung für Chess Labyrinth</title>
+  <meta name="description" content="Privacy policy for the Android and iOS app Chess Labyrinth: local game progress, Google AdMob, privacy choices and your rights.">
+  <title>Privacy Policy for Chess Labyrinth</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -34,6 +34,344 @@
       margin: 2.5rem auto;
       padding: clamp(1.25rem, 5vw, 3.5rem);
       background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+    }
+    header { margin-bottom: 1.5rem; }
+    h1, h2 { line-height: 1.25; text-wrap: balance; }
+    h1 { margin: 0 0 .75rem; font-size: clamp(1.7rem, 5vw, 2.4rem); letter-spacing: -.025em; }
+    h2 { margin: 0 0 1rem; font-size: 1.35rem; letter-spacing: -.01em; }
+    p { margin: 0 0 1rem; }
+    .updated { margin: 0; color: var(--muted); font-size: .95rem; }
+    .notice {
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      border-left: .25rem solid var(--notice-text);
+      border-radius: .25rem;
+      background: var(--notice);
+      color: var(--notice-text);
+    }
+    a { color: var(--link); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: .14em; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; border-radius: 2px; }
+    details { margin: 1.75rem 0 2.5rem; border-block: 1px solid var(--line); }
+    summary { padding: .9rem 0; cursor: pointer; font-weight: 600; }
+    nav ol { margin-top: 0; padding-left: 1.5rem; }
+    nav a { display: inline-block; padding-block: .3rem; }
+    .language-switch { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
+    .language-switch a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      padding: .5rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: .4rem;
+      font-weight: 600;
+    }
+    .language-switch a[aria-current="true"] { color: var(--paper); background: var(--link); border-color: var(--link); text-decoration: none; }
+    article { scroll-margin-top: 6rem; }
+    article[hidden] { display: none; }
+    article:not([hidden]) + article:not([hidden]) { margin-top: 3rem; }
+    section { margin-top: 2.5rem; }
+    ul { padding-left: 1.4rem; margin: 0 0 1rem; }
+    li { padding-left: .15rem; margin-block: .4rem; }
+    address { margin-bottom: 1rem; font-style: normal; }
+    footer { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+    footer a { display: inline-block; padding-block: .5rem; }
+    @media (max-width: 36rem) {
+      main { margin: 0; border: 0; border-radius: 0; }
+      h2 { font-size: 1.2rem; }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #12171f;
+        --paper: #1b222c;
+        --text: #edf1f5;
+        --muted: #b0bbc5;
+        --link: #a1d8bd;
+        --line: #3e4a55;
+        --notice: #302b20;
+        --notice-text: #f0d28a;
+      }
+    }
+    @media print {
+      :root { color-scheme: light; }
+      body, main { background: white; color: black; }
+      body { font-size: 10pt; line-height: 1.5; }
+      main { width: auto; margin: 0; padding: 0; border: 0; }
+      details, footer, .language-switch { display: none; }
+      a { color: inherit; }
+      .updated { color: #444; }
+      .notice { background: white; color: black; border: 1px solid #777; break-inside: avoid; }
+      h2 { break-after: avoid; }
+      address { break-inside: avoid; }
+      p, li { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body>
+  <main id="seitenanfang">
+    <nav class="language-switch" aria-label="Language">
+      <a href="#en-top" lang="en" hreflang="en" data-language-choice="en">English</a>
+      <a href="#de-top" lang="de" hreflang="de" data-language-choice="de">Deutsch</a>
+    </nav>
+<article id="en-top" lang="en" data-policy-language="en">
+  <header>
+    <h1>Privacy Policy for Chess Labyrinth</h1>
+    <p class="updated">Last updated: <time datetime="2026-10-09">October 9, 2026</time></p>
+  </header>
+  <p class="notice" role="note"><strong>Draft: Add the full postal address in the next section before publication.</strong></p>
+  <p>This privacy policy applies to the Android and iOS app <strong>Chess Labyrinth</strong>. The game does not require a user account. Game progress and settings are stored on your device. To fund the app, Google AdMob banner ads and occasional full-screen ads are displayed. Google processes personal data in connection with these services.</p>
+  <details>
+    <summary>Contents</summary>
+    <nav aria-label="Table of contents">
+      <ol>
+        <li><a href="#en-controller-and-contact">Controller and contact</a></li>
+        <li><a href="#en-game-progress-and-settings-on-your-device">Game progress and settings on your device</a></li>
+        <li><a href="#en-advertising-through-google-admob">Advertising through Google AdMob</a></li>
+        <li><a href="#en-privacy-choices-and-withdrawal-of-consent">Privacy choices and withdrawal of consent</a></li>
+        <li><a href="#en-purposes-and-legal-bases">Purposes and legal bases</a></li>
+        <li><a href="#en-processing-outside-the-european-economic-area">Processing outside the European Economic Area</a></li>
+        <li><a href="#en-retention-and-deletion">Retention and deletion</a></li>
+        <li><a href="#en-contact-by-email">Contact by email</a></li>
+        <li><a href="#en-your-rights">Your rights</a></li>
+        <li><a href="#en-app-stores-and-changes-to-this-policy">App stores and changes to this policy</a></li>
+      </ol>
+    </nav>
+  </details>
+  <section aria-labelledby="en-controller-and-contact">
+    <h2 id="en-controller-and-contact">Controller and contact</h2>
+    <p>The controller responsible for processing data in connection with this app is:</p>
+    <address>Manuel Radons<br>
+      [Add street and house number]<br>
+      [Add postal code and city]<br>
+      [Add country]</address>
+    <p>Email: <a href="mailto:ch.jog.dev@gmail.com">ch.jog.dev@gmail.com</a></p>
+  </section>
+  <section aria-labelledby="en-game-progress-and-settings-on-your-device">
+    <h2 id="en-game-progress-and-settings-on-your-device">Game progress and settings on your device</h2>
+    <p>The app stores the following information in local app storage:</p>
+    <ul>
+      <li>Your best results for each level. Unlocked levels, stars, trophies and world best scores are calculated from these results.</li>
+      <li>Your selected language and settings for sound, animations and haptic feedback.</li>
+      <li>Completed-level counters and a capped time value used to control the intervals between full-screen ads.</li>
+    </ul>
+    <p>On first launch, the app reads your device's preferred languages to select an appropriate translation. The selected language is stored. The game does not send your device's list of languages to a server operated by me.</p>
+    <p>I do not operate a server for storing game progress or user profiles. The app does not send me your best results, stars, trophies or game settings. There is no online leaderboard or synchronization between devices operated by the game. The local advertising counters described above are not passed to AdMob as gameplay statistics.</p>
+    <p>No separate analytics or crash-reporting services are integrated in addition to the Google advertising services described below. The game does not access your contacts, photos, camera, microphone or precise device location. Google may nevertheless derive an approximate location from your IP address.</p>
+  </section>
+  <section aria-labelledby="en-advertising-through-google-admob">
+    <h2 id="en-advertising-through-google-admob">Advertising through Google AdMob</h2>
+    <p>Chess Labyrinth uses Google AdMob and Google's service for managing privacy choices, the <strong>User Messaging Platform (UMP)</strong>. Google is an external recipient of data. The contact for Europe is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Company details are available in <a href="https://www.google.com/intl/de_de/contact/impressum.html">Google's legal notice</a>.</p>
+    <p>The app is configured for <strong>non-personalized advertising</strong>. Ads should therefore not be selected on the basis of a profile of your previous usage behavior. However, non-personalized advertising does not mean that no personal data is processed: delivering, measuring and securing these ads may also involve identifiers and local storage. <a href="https://support.google.com/admob/answer/7676680?hl=en">Google explains processing for non-personalized ads here.</a></p>
+    <p>Depending on the operating system, device settings, privacy choices and ad format, Google's services may process the following data in particular:</p>
+    <ul>
+      <li>Your IP address and approximate location information derived from it.</li>
+      <li>Technical information about the device, operating system and app, and device, app or other identifiers where available.</li>
+      <li>Information about ads displayed and interactions, such as ad views, taps or advertising video playback, and technical usage events such as app launches.</li>
+      <li>Diagnostic and performance data, such as loading times, crash reports and information about technical errors.</li>
+      <li>Your privacy choices and information needed to manage them.</li>
+    </ul>
+    <p>Google uses this data to provide and measure advertising, for billing, to improve its advertising services and to protect against fraud and abuse. The categories processed in any particular case depend on the conditions described above. Details are provided in Google's information for <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Android</a> and <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">iOS</a>, and in <a href="https://policies.google.com/privacy?hl=en">Google's Privacy Policy</a>.</p>
+    <p>No additional advertising network SDKs are integrated into the app. However, other service providers and advertising partners used by Google may receive data as part of ad delivery. Information about the providers involved and their purposes is available in the privacy dialog, where provided, and in <a href="https://policies.google.com/technologies/partner-sites?hl=en">Google's information about data use on partner websites and apps</a>. If you follow an ad to another website or app, that provider's privacy notices also apply there.</p>
+  </section>
+  <section aria-labelledby="en-privacy-choices-and-withdrawal-of-consent">
+    <h2 id="en-privacy-choices-and-withdrawal-of-consent">Privacy choices and withdrawal of consent</h2>
+    <p>The app uses Google UMP to determine which privacy prompt is required and to display the corresponding dialog. This check already establishes a connection to Google. It is separate from the subsequent request for advertising. Depending on the region and your choices, authorization by UMP may also allow limited ads to be delivered; it does not automatically mean that you have given consent. <a href="https://developers.google.com/admob/ios/privacy">Information about Google UMP</a>.</p>
+    <p>Where consent is required, you can accept or reject the purposes offered in the dialog. Under <strong>Settings → Ad privacy options</strong>, you can revisit and change your choices if Google provides this option for your region. You can withdraw consent there with effect for the future. Withdrawal does not affect the lawfulness of processing carried out before withdrawal. Refusing or withdrawing consent may result in limited ads or no ads being displayed; the game's features remain available.</p>
+    <p>Consent choices are stored by the Google service. <strong>“Reset progress” does not delete advertising consent or data already stored by Google.</strong></p>
+  </section>
+  <section aria-labelledby="en-purposes-and-legal-bases">
+    <h2 id="en-purposes-and-legal-bases">Purposes and legal bases</h2>
+    <p>Where personal data is processed and the General Data Protection Regulation (GDPR) applies, the legal bases are:</p>
+    <ul>
+      <li><strong>Providing the game and storing settings:</strong> Article 6(1)(b) GDPR, to the extent necessary to provide the features you request.</li>
+      <li><strong>Advertising-related processing requiring consent:</strong> Article 6(1)(a) GDPR.</li>
+      <li><strong>Legally required management and documentation of consent:</strong> Article 6(1)(c) GDPR.</li>
+      <li><strong>Technical delivery of non-personalized advertising, limiting advertising interruptions and preventing abuse:</strong> where consent is not required, Article 6(1)(f) GDPR. The interests are funding the app and operating it securely with minimal disruption. This applies only where your interests requiring protection do not override those interests.</li>
+    </ul>
+    <p>These legal bases are set out in <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=en">Article 6 GDPR</a>. A legitimate interest does not replace consent required by law.</p>
+    <p>Storing or accessing information on your device is also subject to the applicable rules protecting terminal equipment. Where German law applies, non-essential access requires consent under Section 25(1) of the TDDDG. Access that is strictly necessary to provide features you expressly request, such as storing your game progress and selected settings, falls under Section 25(2), point 2 of the TDDDG. <a href="https://www.gesetze-im-internet.de/ttdsg/__25.html">Section 25 TDDDG</a>.</p>
+  </section>
+  <section aria-labelledby="en-processing-outside-the-european-economic-area">
+    <h2 id="en-processing-outside-the-european-economic-area">Processing outside the European Economic Area</h2>
+    <p>Google may also process data outside the European Economic Area, particularly in the United States. According to Google, it relies on applicable adequacy decisions, including the EU–US Data Privacy Framework for covered transfers to certified companies, and, where necessary, standard contractual clauses. Information about these safeguards and how to obtain a copy of the standard contractual clauses is available in <a href="https://policies.google.com/privacy/frameworks?hl=en">Google's information about international data transfers</a>.</p>
+  </section>
+  <section aria-labelledby="en-retention-and-deletion">
+    <h2 id="en-retention-and-deletion">Retention and deletion</h2>
+    <p><strong>Local game data:</strong> game progress and settings generally remain stored until you change or delete them. Under <strong>Settings → Reset progress</strong>, best results and the unlocked levels, stars, trophies and world best scores derived from them, together with the local counters for full-screen ads, are reset. Language, sound, animations, haptics and privacy choices are preserved.</p>
+    <p>You can remove other local app data using your operating system's data management options or by fully deleting the app. Merely offloading an app on iOS retains its data.</p>
+    <p><strong>Device backups:</strong> depending on your system settings, app data may be included in device backups and restored later. Such backups are allowed on Android. Storage and deletion of these backups depend on your settings and the backup service used, for example Apple's or Google's. Resetting the game does not delete existing backup copies.</p>
+    <p><strong>Google data:</strong> retention periods depend on the type of data, the purpose of processing and legal requirements. Google deletes or anonymizes certain data after defined periods; other data may be retained longer, particularly for security, abuse prevention or legal obligations. Google explains the details and deletion options in its <a href="https://policies.google.com/technologies/retention?hl=en">information about data retention</a>. Uninstalling the app does not automatically delete data already sent to Google.</p>
+  </section>
+  <section aria-labelledby="en-contact-by-email">
+    <h2 id="en-contact-by-email">Contact by email</h2>
+    <p>If you email me, I process your email address and the information you provide in order to respond to your request. The contact address above uses Google's Gmail service, so Google also processes the messages sent. The linked Google information about data processing and international transfers also applies.</p>
+    <p>The legal basis is Article 6(1)(b) GDPR for requests concerning use of the app, and Article 6(1)(f) GDPR for other requests, based on the interest in responding to your message. Correspondence is deleted once the matter has been fully resolved, unless statutory retention obligations or necessary documentation require otherwise. Contacting me is voluntary; without a means to reply, I may be unable to answer your request.</p>
+  </section>
+  <section aria-labelledby="en-your-rights">
+    <h2 id="en-your-rights">Your rights</h2>
+    <p>Where the legal requirements are met, you have rights of access, rectification, erasure, restriction of processing and data portability. You can withdraw consent with effect for the future. You can object to processing based on legitimate interests on grounds relating to your particular situation; you may object to direct marketing at any time.</p>
+    <p>You can also lodge a complaint with a data protection supervisory authority, particularly in the place of your habitual residence, place of work or the alleged infringement. The <a href="https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en">European Commission provides an overview of your data protection rights</a>.</p>
+    <p>For matters concerning the app, you can contact me at <a href="mailto:ch.jog.dev@gmail.com">ch.jog.dev@gmail.com</a>. I have no remote access to the game progress stored by the app on your device. For data that Google processes as an independent controller, the contact and privacy tools in <a href="https://policies.google.com/privacy?hl=en">Google's Privacy Policy</a> are also available.</p>
+    <p>The game does not make decisions about you based solely on automated processing that produce legal effects or similarly significantly affect you.</p>
+  </section>
+  <section aria-labelledby="en-app-stores-and-changes-to-this-policy">
+    <h2 id="en-app-stores-and-changes-to-this-policy">App stores and changes to this policy</h2>
+    <p>When you download or update the app, Apple or Google processes data as an independent controller. Their privacy notices apply to that processing. This policy describes data processing within Chess Labyrinth and when you contact me; it does not replace the app stores' privacy notices.</p>
+    <p>This policy will be updated if features, services used or legal requirements change. The date at the beginning indicates the date of this version.</p>
+  </section>
+  <footer><a href="#en-top">Back to top</a></footer>
+</article>
+<article id="de-top" lang="de" data-policy-language="de">
+    <header>
+      <h1>Datenschutzerklärung für Chess Labyrinth</h1>
+      <p class="updated">Stand: <time datetime="2026-10-09">9. Oktober 2026</time></p>
+    </header>
+    <p class="notice" role="note"><strong>Entwurf: Vor der Veröffentlichung die vollständige Anschrift im nächsten Abschnitt ergänzen.</strong></p>
+    <p>Diese Datenschutzerklärung gilt für die Android- und iOS-App <strong>Chess Labyrinth</strong>. Das Spiel benötigt kein Benutzerkonto. Spielstände und Einstellungen werden auf Ihrem Gerät gespeichert. Zur Finanzierung der App werden Werbebanner und gelegentlich Vollbildanzeigen von Google AdMob eingeblendet. Dabei verarbeitet Google personenbezogene Daten.</p>
+    <details>
+      <summary>Inhalt</summary>
+      <nav aria-label="Inhaltsverzeichnis">
+        <ol>
+          <li><a href="#verantwortlicher-und-kontakt">Verantwortlicher und Kontakt</a></li>
+          <li><a href="#spielstaende-und-einstellungen-auf-ihrem-geraet">Spielstände und Einstellungen auf Ihrem Gerät</a></li>
+          <li><a href="#werbung-durch-google-admob">Werbung durch Google AdMob</a></li>
+          <li><a href="#datenschutzentscheidung-und-widerruf">Datenschutzentscheidung und Widerruf</a></li>
+          <li><a href="#zwecke-und-rechtsgrundlagen">Zwecke und Rechtsgrundlagen</a></li>
+          <li><a href="#verarbeitung-ausserhalb-des-europaeischen-wirtschaftsraums">Verarbeitung außerhalb des Europäischen Wirtschaftsraums</a></li>
+          <li><a href="#speicherdauer-und-loeschung">Speicherdauer und Löschung</a></li>
+          <li><a href="#kontakt-per-e-mail">Kontakt per E-Mail</a></li>
+          <li><a href="#ihre-rechte">Ihre Rechte</a></li>
+          <li><a href="#app-stores-und-aenderungen-dieser-erklaerung">App Stores und Änderungen dieser Erklärung</a></li>
+        </ol>
+      </nav>
+    </details>
+    <section aria-labelledby="verantwortlicher-und-kontakt">
+      <h2 id="verantwortlicher-und-kontakt">Verantwortlicher und Kontakt</h2>
+      <p>Verantwortlich für die Datenverarbeitung im Zusammenhang mit dieser App ist:</p>
+      <address>Manuel Radons<br>
+        [Straße und Hausnummer ergänzen]<br>
+        [Postleitzahl und Ort ergänzen]<br>
+        [Land ergänzen]</address>
+      <p>E-Mail: <a href="mailto:ch.jog.dev@gmail.com">ch.jog.dev@gmail.com</a></p>
+    </section>
+    <section aria-labelledby="spielstaende-und-einstellungen-auf-ihrem-geraet">
+      <h2 id="spielstaende-und-einstellungen-auf-ihrem-geraet">Spielstände und Einstellungen auf Ihrem Gerät</h2>
+      <p>Die App speichert die folgenden Informationen im lokalen App-Speicher:</p>
+      <ul>
+        <li>Bestleistungen pro Level. Daraus werden freigeschaltete Level, Sterne, Trophäen und Weltbestleistungen berechnet.</li>
+        <li>Ihre gewählte Sprache sowie Einstellungen für Ton, Animationen und haptisches Feedback.</li>
+        <li>Zähler abgeschlossener Level und eine begrenzte Zeitangabe zur Steuerung der Abstände zwischen Vollbildanzeigen.</li>
+      </ul>
+      <p>Beim ersten Start liest die App die bevorzugten Gerätesprachen aus, um eine passende Übersetzung auszuwählen. Gespeichert wird die ausgewählte Sprache. Die Liste Ihrer Gerätesprachen wird vom Spiel nicht an einen eigenen Server übermittelt.</p>
+      <p>Ich betreibe keinen Server zur Speicherung von Spielständen oder Nutzerprofilen. Die App übermittelt Ihre Bestleistungen, Sterne, Trophäen und Spieleinstellungen nicht an mich. Es gibt keine Online-Rangliste und keine vom Spiel betriebene Synchronisierung zwischen Geräten. Die beschriebenen lokalen Werbezähler werden nicht als Spielstatistik an AdMob übergeben.</p>
+      <p>Zusätzlich zu den unten beschriebenen Google-Werbediensten sind keine eigenen Analyse- oder Absturzberichtsdienste eingebunden. Das Spiel greift nicht auf Ihre Kontakte, Fotos, Kamera, Ihr Mikrofon oder Ihren präzisen Gerätestandort zu. Google kann aus der IP-Adresse dennoch einen ungefähren Standort ableiten.</p>
+    </section>
+    <section aria-labelledby="werbung-durch-google-admob">
+      <h2 id="werbung-durch-google-admob">Werbung durch Google AdMob</h2>
+      <p>Chess Labyrinth verwendet Google AdMob und Googles Dienst zur Verwaltung von Datenschutzentscheidungen, die <strong>User Messaging Platform (UMP)</strong>. Google ist dabei ein externer Empfänger von Daten. Für Europa ist Ansprechpartner Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Angaben zum Unternehmen finden Sie im <a href="https://www.google.com/intl/de_de/contact/impressum.html">Google-Impressum</a>.</p>
+      <p>Die App ist für <strong>nicht personalisierte Werbung</strong> konfiguriert. Die Auswahl der Anzeigen soll daher nicht auf einem Profil Ihres bisherigen Nutzungsverhaltens beruhen. Nicht personalisierte Werbung bedeutet jedoch nicht, dass keine personenbezogenen Daten verarbeitet werden: Auch die Auslieferung, Messung und Absicherung solcher Anzeigen kann Kennungen und lokalen Speicher verwenden. <a href="https://support.google.com/admob/answer/7676680?hl=de">Google erläutert die Verarbeitung bei nicht personalisierten Anzeigen hier.</a></p>
+      <p>Abhängig von Betriebssystem, Geräteeinstellungen, Datenschutzentscheidung und Anzeigenformat können die Google-Dienste insbesondere folgende Daten verarbeiten:</p>
+      <ul>
+        <li>IP-Adresse und daraus abgeleitete ungefähre Standortinformationen.</li>
+        <li>Technische Angaben zum Gerät, Betriebssystem und zur App sowie Geräte-, App- oder sonstige Kennungen, soweit diese verfügbar sind.</li>
+        <li>Angaben zu angezeigten Anzeigen und Interaktionen, etwa Anzeigenaufrufe, Antippen oder das Abspielen von Werbevideos, sowie technische Nutzungsereignisse wie App-Starts.</li>
+        <li>Diagnose- und Leistungsdaten, etwa Ladezeiten, Absturzberichte und Informationen über technische Fehler.</li>
+        <li>Ihre Datenschutzentscheidungen und die für deren Verwaltung benötigten Informationen.</li>
+      </ul>
+      <p>Google verwendet solche Daten zur Bereitstellung und Messung von Werbung, zur Abrechnung, zur Verbesserung seiner Werbedienste und zum Schutz vor Betrug und Missbrauch. Welche Kategorien im Einzelfall verarbeitet werden, hängt von den genannten Bedingungen ab. Einzelheiten beschreiben Googles Informationen für <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Android</a> und <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">iOS</a> sowie die <a href="https://policies.google.com/privacy?hl=de">Google-Datenschutzerklärung</a>.</p>
+      <p>Zusätzliche Werbenetzwerk-SDKs sind nicht in die App eingebunden. Im Rahmen der Anzeigenauslieferung können jedoch weitere von Google eingesetzte Dienstleister und Werbepartner Daten erhalten. Informationen zu den beteiligten Anbietern und ihren Zwecken finden Sie im verfügbaren Datenschutzdialog und in <a href="https://policies.google.com/technologies/partner-sites?hl=de">Googles Informationen zur Datennutzung auf Partner-Websites und in Partner-Apps</a>. Wenn Sie einer Anzeige zu einer fremden Website oder App folgen, gelten dort zusätzlich die Datenschutzhinweise des jeweiligen Anbieters.</p>
+    </section>
+    <section aria-labelledby="datenschutzentscheidung-und-widerruf">
+      <h2 id="datenschutzentscheidung-und-widerruf">Datenschutzentscheidung und Widerruf</h2>
+      <p>Die App verwendet Google UMP, um zu ermitteln, welche Datenschutzabfrage erforderlich ist, und den entsprechenden Dialog anzuzeigen. Bereits diese Abfrage stellt eine Verbindung zu Google her. Sie ist von der anschließenden Anforderung von Werbung zu unterscheiden. Eine Freigabe durch UMP kann je nach Region und Entscheidung auch die Auslieferung eingeschränkter Anzeigen erlauben; sie bedeutet nicht automatisch, dass Sie eine Einwilligung erteilt haben. <a href="https://developers.google.com/admob/ios/privacy">Informationen zu Google UMP</a>.</p>
+      <p>Soweit eine Einwilligung erforderlich ist, können Sie die angebotenen Zwecke im Dialog annehmen oder ablehnen. In den <strong>Einstellungen → Datenschutzoptionen für Werbung</strong> können Sie Ihre Entscheidung erneut aufrufen und ändern, sofern diese Option für Ihre Region von Google bereitgestellt wird. Eine erteilte Einwilligung können Sie dort mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt unberührt. Eine Ablehnung oder ein Widerruf kann dazu führen, dass eingeschränkte oder keine Anzeigen erscheinen; die Spielfunktionen bleiben nutzbar.</p>
+      <p>Einwilligungsentscheidungen werden durch den Google-Dienst gespeichert. <strong>„Fortschritt zurücksetzen“ löscht keine Werbeeinwilligung und keine bereits bei Google gespeicherten Daten.</strong></p>
+    </section>
+    <section aria-labelledby="zwecke-und-rechtsgrundlagen">
+      <h2 id="zwecke-und-rechtsgrundlagen">Zwecke und Rechtsgrundlagen</h2>
+      <p>Soweit personenbezogene Daten verarbeitet werden und die Datenschutz-Grundverordnung (DSGVO) gilt, sind die Rechtsgrundlagen:</p>
+      <ul>
+        <li><strong>Spiel bereitstellen und Einstellungen speichern:</strong> Art. 6 Abs. 1 Buchst. b DSGVO, soweit dies zur Bereitstellung der von Ihnen gewünschten Funktionen erforderlich ist.</li>
+        <li><strong>Einwilligungspflichtige Werbeverarbeitung:</strong> Art. 6 Abs. 1 Buchst. a DSGVO.</li>
+        <li><strong>Gesetzlich erforderliche Verwaltung und Nachweise von Einwilligungen:</strong> Art. 6 Abs. 1 Buchst. c DSGVO.</li>
+        <li><strong>Technische Auslieferung nicht personalisierter Werbung, Begrenzung von Werbeunterbrechungen und Missbrauchsschutz:</strong> Soweit keine Einwilligung erforderlich ist, Art. 6 Abs. 1 Buchst. f DSGVO. Die Interessen liegen in der Finanzierung und dem sicheren, störungsarmen Betrieb der App. Dies gilt nur, soweit Ihre schutzwürdigen Interessen nicht überwiegen.</li>
+      </ul>
+      <p>Diese Rechtsgrundlagen ergeben sich aus <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=de">Art. 6 DSGVO</a>. Ein berechtigtes Interesse ersetzt keine gesetzlich erforderliche Einwilligung.</p>
+      <p>Für das Speichern oder Auslesen von Informationen auf Ihrem Gerät gelten zusätzlich die anwendbaren Regeln zum Schutz der Endeinrichtung. Soweit deutsches Recht anwendbar ist, erfordern nicht notwendige Zugriffe eine Einwilligung nach § 25 Abs. 1 TDDDG. Unbedingt notwendige Zugriffe zur Bereitstellung ausdrücklich gewünschter Funktionen, etwa zum Speichern Ihrer Spielstände und gewählten Einstellungen, fallen unter § 25 Abs. 2 Nr. 2 TDDDG. <a href="https://www.gesetze-im-internet.de/ttdsg/__25.html">§ 25 TDDDG</a>.</p>
+    </section>
+    <section aria-labelledby="verarbeitung-ausserhalb-des-europaeischen-wirtschaftsraums">
+      <h2 id="verarbeitung-ausserhalb-des-europaeischen-wirtschaftsraums">Verarbeitung außerhalb des Europäischen Wirtschaftsraums</h2>
+      <p>Google kann Daten auch außerhalb des Europäischen Wirtschaftsraums verarbeiten, insbesondere in den USA. Nach eigenen Angaben nutzt Google hierfür anwendbare Angemessenheitsbeschlüsse, einschließlich des EU-US Data Privacy Framework für entsprechend erfasste Übermittlungen an zertifizierte Unternehmen, und erforderlichenfalls Standardvertragsklauseln. Informationen zu diesen Grundlagen und dazu, wie Sie eine Kopie der Standardvertragsklauseln erhalten, finden Sie in <a href="https://policies.google.com/privacy/frameworks?hl=de">Googles Hinweisen zu internationalen Datenübermittlungen</a>.</p>
+    </section>
+    <section aria-labelledby="speicherdauer-und-loeschung">
+      <h2 id="speicherdauer-und-loeschung">Speicherdauer und Löschung</h2>
+      <p><strong>Lokale Spieldaten:</strong> Spielstände und Einstellungen bleiben grundsätzlich gespeichert, bis Sie sie ändern oder löschen. Unter <strong>Einstellungen → Fortschritt zurücksetzen</strong> werden Bestleistungen, daraus abgeleitete Freischaltungen, Sterne, Trophäen und Weltbestleistungen sowie die lokalen Zähler für Vollbildanzeigen zurückgesetzt. Sprache, Ton, Animationen, Haptik und Datenschutzentscheidungen bleiben dabei erhalten.</p>
+      <p>Weitere lokale App-Daten können Sie über die Datenverwaltung des Betriebssystems beziehungsweise durch vollständiges Löschen der App entfernen. Das bloße Auslagern einer App unter iOS lässt deren Daten bestehen.</p>
+      <p><strong>Gerätesicherungen:</strong> Abhängig von Ihren Systemeinstellungen können App-Daten in Gerätesicherungen enthalten sein und später wiederhergestellt werden. Unter Android sind solche Sicherungen zugelassen. Speicherung und Löschung dieser Sicherungen richten sich nach Ihren Einstellungen und dem verwendeten Sicherungsdienst, beispielsweise von Apple oder Google. Das Zurücksetzen des Spiels löscht keine bereits vorhandenen Sicherungskopien.</p>
+      <p><strong>Google-Daten:</strong> Die Speicherdauer richtet sich nach Datenart, Verarbeitungszweck und rechtlichen Anforderungen. Google löscht oder anonymisiert bestimmte Daten nach festgelegten Fristen; andere Daten können insbesondere zur Sicherheit, zur Missbrauchsbekämpfung oder aufgrund gesetzlicher Pflichten länger aufbewahrt werden. Einzelheiten und Löschmöglichkeiten erläutert Google in seinen <a href="https://policies.google.com/technologies/retention?hl=de">Hinweisen zur Datenspeicherung</a>. Die Deinstallation der App löscht bereits übermittelte Daten bei Google nicht automatisch.</p>
+    </section>
+    <section aria-labelledby="kontakt-per-e-mail">
+      <h2 id="kontakt-per-e-mail">Kontakt per E-Mail</h2>
+      <p>Wenn Sie mir eine E-Mail senden, verarbeite ich Ihre E-Mail-Adresse und die von Ihnen mitgeteilten Inhalte, um Ihre Anfrage zu beantworten. Für die oben genannte Kontaktadresse wird Gmail von Google verwendet; dadurch verarbeitet Google auch die übermittelten Nachrichten. Es gelten ergänzend die verlinkten Google-Hinweise zur Datenverarbeitung und zu internationalen Übermittlungen.</p>
+      <p>Rechtsgrundlage ist bei Anfragen zur Nutzung der App Art. 6 Abs. 1 Buchst. b DSGVO, bei sonstigen Anfragen Art. 6 Abs. 1 Buchst. f DSGVO aufgrund des Interesses an der Beantwortung Ihrer Nachricht. Die Korrespondenz wird gelöscht, sobald das Anliegen abschließend geklärt ist und keine gesetzlichen Aufbewahrungspflichten oder erforderlichen Nachweise entgegenstehen. Die Kontaktaufnahme ist freiwillig; ohne eine Rückmeldemöglichkeit kann ich Ihre Anfrage gegebenenfalls nicht beantworten.</p>
+    </section>
+    <section aria-labelledby="ihre-rechte">
+      <h2 id="ihre-rechte">Ihre Rechte</h2>
+      <p>Soweit die gesetzlichen Voraussetzungen vorliegen, haben Sie Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit. Sie können Einwilligungen für die Zukunft widerrufen. Gegen Verarbeitungen auf Grundlage berechtigter Interessen können Sie aus Gründen Ihrer besonderen Situation Widerspruch einlegen; gegen Direktwerbung ist ein Widerspruch jederzeit möglich.</p>
+      <p>Sie können sich außerdem bei einer Datenschutzaufsichtsbehörde beschweren, insbesondere an Ihrem gewöhnlichen Aufenthaltsort, Ihrem Arbeitsplatz oder am Ort des vermuteten Verstoßes. Einen Überblick bietet die <a href="https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en">Europäische Kommission zu Ihren Datenschutzrechten</a>.</p>
+      <p>Für Anliegen zur App erreichen Sie mich unter <a href="mailto:ch.jog.dev@gmail.com">ch.jog.dev@gmail.com</a>. Auf die von der App auf Ihrem Gerät gespeicherten Spielstände habe ich keinen Fernzugriff. Für Daten, die Google eigenverantwortlich verarbeitet, stehen zusätzlich die Kontakt- und Datenschutzfunktionen in der <a href="https://policies.google.com/privacy?hl=de">Google-Datenschutzerklärung</a> zur Verfügung.</p>
+      <p>Das Spiel trifft keine ausschließlich automatisierten Entscheidungen über Sie, die rechtliche Wirkung entfalten oder Sie ähnlich erheblich beeinträchtigen.</p>
+    </section>
+    <section aria-labelledby="app-stores-und-aenderungen-dieser-erklaerung">
+      <h2 id="app-stores-und-aenderungen-dieser-erklaerung">App Stores und Änderungen dieser Erklärung</h2>
+      <p>Beim Herunterladen oder Aktualisieren der App verarbeiten Apple beziehungsweise Google Daten in eigener Verantwortung. Dafür gelten deren Datenschutzhinweise. Diese Erklärung beschreibt die Datenverarbeitung innerhalb von Chess Labyrinth und bei einer Kontaktaufnahme mit mir; sie ersetzt nicht die Datenschutzhinweise der App Stores.</p>
+      <p>Wenn sich Funktionen, eingesetzte Dienste oder rechtliche Anforderungen ändern, wird diese Erklärung entsprechend angepasst. Das Datum am Anfang bezeichnet den Stand dieser Fassung.</p>
+    </section>
+    <footer><a href="#de-top">Nach oben</a></footer>
+</article>
+  </main>
+  <script>
+    (() => {
+      const policies = [...document.querySelectorAll('[data-policy-language]')];
+      const languageLinks = [...document.querySelectorAll('[data-language-choice]')];
+      const descriptions = {
+        en: 'Privacy policy for the Android and iOS app Chess Labyrinth: local game progress, Google AdMob, privacy choices and your rights.',
+        de: 'Datenschutzerklärung für die Android- und iOS-App Chess Labyrinth: lokale Spielstände, Google AdMob, Datenschutzentscheidungen und Ihre Rechte.'
+      };
+
+      function showLanguage() {
+        let fragment = '';
+        try { fragment = decodeURIComponent(location.hash.slice(1)); } catch { /* Unknown fragments open English. */ }
+        const target = fragment ? document.getElementById(fragment) : null;
+        const language = target?.closest('[data-policy-language]')?.dataset.policyLanguage || 'en';
+        const selected = policies.find(policy => policy.dataset.policyLanguage === language);
+        for (const policy of policies) policy.hidden = policy !== selected;
+        for (const link of languageLinks) {
+          if (link.dataset.languageChoice === language) link.setAttribute('aria-current', 'true');
+          else link.removeAttribute('aria-current');
+        }
+        document.documentElement.lang = language;
+        document.title = selected.querySelector('h1').textContent;
+        document.querySelector('meta[name="description"]').content = descriptions[language];
+        document.querySelector('.language-switch').setAttribute('aria-label', language === 'de' ? 'Sprache' : 'Language');
+        if (document.activeElement.closest('[data-policy-language]')?.hidden) {
+          languageLinks.find(link => link.dataset.languageChoice === language).focus({ preventScroll: true });
+        }
+        // Reveal a linked section before scrolling, including direct German links.
+        if (target && selected.contains(target)) requestAnimationFrame(() => {
+          if (target === selected) window.scrollTo(0, 0);
+          else target.scrollIntoView();
+        });
+      }
+      window.addEventListener('hashchange', showLanguage);
+      showLanguage();
+    })();
+  </script>
+</body>
+</html>
       border: 1px solid var(--line);
       border-radius: .75rem;
     }
